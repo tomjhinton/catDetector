@@ -1,0 +1,85 @@
+canvas{
+  position: relative;
+  display: hidden
+}
+
+video{
+  border: 5px solid black;
+  width: 100%;
+  background-color: black;
+}
+#title{
+  font-family: Helvetica;
+  font-size: 5em;
+  margin-left: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  position: absolute;
+  visibility: hidden;
+  width: 500px;
+  height: 200px;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  margin-top: 300px;
+
+  /* Position the tooltip text - see examples below! */
+
+  z-index: 1;
+
+
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#console{
+  font-size: 3em;
+}
+#emoji{
+  font-size: 7em;
+  -webkit-animation: AnimationName 4s ease infinite;
+-moz-animation: AnimationName 4s ease infinite;
+animation: AnimationName 4s ease infinite;
+
+@-webkit-keyframes AnimationName {
+  0%{font-size: 7em;
+  transform: rotate(0deg);}
+  50%{font-size: 14em;
+  transform: rotate(1800deg);}
+  100%{font-size: 7em;
+  transform: rotate(0deg);}
+}
+@-moz-keyframes AnimationName {
+  0%{font-size: 7em;
+  transform: rotate(0deg);}
+  50%{font-size: 14em;
+  transform: rotate(1800deg);}
+  100%{font-size: 7em;
+  transform: rotate(0deg);}
+}
+@keyframes AnimationName {
+  0%{font-size: 7em;
+  transform: rotate(0deg);}
+  50%{font-size: 14em;
+  transform: rotate(1800deg);}
+  100%{font-size: 7em;
+  transform: rotate(0deg);}
+}
+}
